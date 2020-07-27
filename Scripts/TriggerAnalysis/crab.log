@@ -1,0 +1,1366 @@
+DEBUG 2019-08-22 14:35:25,700: 	 Executing command: 'submit'
+DEBUG 2019-08-22 14:35:25,701: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-08-22 14:35:25,718: 	 Checking credentials
+DEBUG 2019-08-22 14:35:25,718: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-08-22 14:35:25,718: 	 Getting proxy life time left
+DEBUG 2019-08-22 14:35:26,426: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 39120
+
+ error: 
+ retcode : 0
+DEBUG 2019-08-22 14:35:27,132: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 39119
+
+ error: 
+ retcode : 0
+DEBUG 2019-08-22 14:35:27,132: 	 Proxy lifetime 39120 secs is different from voms extension lifetime 39119 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-08-22 14:35:27,132: 	 Proxy valid for 10:51:59 hours
+INFO 2019-08-22 14:35:27,132: 	 Will use CRAB configuration file crabTPG_MC_2019_200evt.py
+DEBUG 2019-08-22 14:35:27,132: 	 Loading CRAB configuration file.
+DEBUG 2019-08-22 14:35:29,767: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-08-22 14:35:29,767: 	 Invalid CRAB configuration:
+ when ignoreLocality is set a valid site white list must be specified using the Site.whitelist parameter
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2019-08-22 14:35:29,767: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 92, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration:
+ when ignoreLocality is set a valid site white list must be specified using the Site.whitelist parameter
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2019-08-22 15:25:39,926: 	 Executing command: 'preparelocal'
+DEBUG 2019-08-22 15:25:39,926: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+ERROR 2019-08-22 15:25:39,926: 	 Error: = is not a valid CRAB project directory.
+ERROR 2019-08-22 15:25:39,927: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/preparelocal.py", line 24, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: = is not a valid CRAB project directory.
+DEBUG 2019-08-22 15:27:01,426: 	 Executing command: 'preparelocal'
+DEBUG 2019-08-22 15:27:01,426: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+ERROR 2019-08-22 15:27:01,426: 	 Error: = is not a valid CRAB project directory.
+ERROR 2019-08-22 15:27:01,426: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/preparelocal.py", line 24, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: = is not a valid CRAB project directory.
+DEBUG 2019-08-22 15:27:33,257: 	 Executing command: 'preparelocal'
+DEBUG 2019-08-22 15:27:33,258: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+ERROR 2019-08-22 15:27:33,258: 	 Error: = is not a valid CRAB project directory.
+ERROR 2019-08-22 15:27:33,258: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/preparelocal.py", line 24, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: = is not a valid CRAB project directory.
+DEBUG 2019-08-22 15:29:06,689: 	 Executing command: 'preparelocal'
+DEBUG 2019-08-22 15:29:06,689: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+ERROR 2019-08-22 15:29:06,689: 	 Error: = is not a valid CRAB project directory.
+ERROR 2019-08-22 15:29:06,690: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/preparelocal.py", line 24, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: = is not a valid CRAB project directory.
+DEBUG 2019-08-22 15:29:25,407: 	 Executing command: 'preparelocal'
+DEBUG 2019-08-22 15:29:25,407: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+ERROR 2019-08-22 15:29:25,407: 	 Error: = is not a valid CRAB project directory.
+ERROR 2019-08-22 15:29:25,407: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/preparelocal.py", line 24, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: = is not a valid CRAB project directory.
+DEBUG 2019-09-05 16:20:26,542: 	 Executing command: 'submit'
+DEBUG 2019-09-05 16:20:26,544: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-09-05 16:20:26,613: 	 Checking credentials
+DEBUG 2019-09-05 16:20:26,613: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-09-05 16:20:26,613: 	 Getting proxy life time left
+DEBUG 2019-09-05 16:20:28,262: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 35355
+
+ error: 
+ retcode : 0
+DEBUG 2019-09-05 16:20:29,390: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 35354
+
+ error: 
+ retcode : 0
+DEBUG 2019-09-05 16:20:29,390: 	 Proxy lifetime 35355 secs is different from voms extension lifetime 35354 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-09-05 16:20:29,390: 	 Proxy valid for 09:49:14 hours
+INFO 2019-09-05 16:20:29,391: 	 Will use CRAB configuration file crabTPG_MC_2019_1-2000.py
+DEBUG 2019-09-05 16:20:29,392: 	 Loading CRAB configuration file.
+ERROR 2019-09-05 16:20:34,473: 	 The 'dryrun' option is not compatible with the 'Automatic' splitting mode (default).
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2019-09-05 16:20:34,473: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 92, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: The 'dryrun' option is not compatible with the 'Automatic' splitting mode (default).
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2019-09-05 16:30:16,391: 	 Executing command: 'submit'
+DEBUG 2019-09-05 16:30:16,391: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-09-05 16:30:16,416: 	 Checking credentials
+DEBUG 2019-09-05 16:30:16,416: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-09-05 16:30:16,416: 	 Getting proxy life time left
+DEBUG 2019-09-05 16:30:17,638: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 34766
+
+ error: 
+ retcode : 0
+DEBUG 2019-09-05 16:30:18,880: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 34765
+
+ error: 
+ retcode : 0
+DEBUG 2019-09-05 16:30:18,880: 	 Proxy lifetime 34766 secs is different from voms extension lifetime 34765 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-09-05 16:30:18,880: 	 Proxy valid for 09:39:25 hours
+INFO 2019-09-05 16:30:18,880: 	 Will use CRAB configuration file crabTPG_MC_2019_1-2000.py
+DEBUG 2019-09-05 16:30:18,881: 	 Loading CRAB configuration file.
+ERROR 2019-09-05 16:30:23,363: 	 The 'dryrun' option is not compatible with the 'Automatic' splitting mode (default).
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2019-09-05 16:30:23,364: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 92, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: The 'dryrun' option is not compatible with the 'Automatic' splitting mode (default).
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2019-09-05 16:37:01,098: 	 Executing command: 'submit'
+DEBUG 2019-09-05 16:37:01,098: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-09-05 16:37:01,124: 	 Checking credentials
+DEBUG 2019-09-05 16:37:01,125: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-09-05 16:37:01,125: 	 Getting proxy life time left
+DEBUG 2019-09-05 16:37:02,756: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 34361
+
+ error: 
+ retcode : 0
+DEBUG 2019-09-05 16:37:03,871: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 34360
+
+ error: 
+ retcode : 0
+DEBUG 2019-09-05 16:37:03,871: 	 Proxy lifetime 34361 secs is different from voms extension lifetime 34360 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-09-05 16:37:03,871: 	 Proxy valid for 09:32:40 hours
+INFO 2019-09-05 16:37:03,872: 	 Will use CRAB configuration file crabTPG_MC_2019_1-2000.py
+DEBUG 2019-09-05 16:37:03,872: 	 Loading CRAB configuration file.
+DEBUG 2019-09-05 16:37:08,898: 	 Will use CRAB PrivateMC plugin (i.e. will run a MC generation job type).
+ERROR 2019-09-05 16:37:08,899: 	 Working area '/afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/2019_TPG_crab_projects_MC/crab_SingleNeutrinoGun_GEN-SIM-DIGI-RAW_1-2000_5Sept19' already exists 
+Please change the requestName in the config file
+ERROR 2019-09-05 16:37:08,899: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 315, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 404, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/2019_TPG_crab_projects_MC/crab_SingleNeutrinoGun_GEN-SIM-DIGI-RAW_1-2000_5Sept19' already exists 
+Please change the requestName in the config file
+DEBUG 2019-09-05 16:44:34,512: 	 Executing command: 'submit'
+DEBUG 2019-09-05 16:44:34,512: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-09-05 16:44:34,545: 	 Checking credentials
+DEBUG 2019-09-05 16:44:34,546: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-09-05 16:44:34,546: 	 Getting proxy life time left
+DEBUG 2019-09-05 16:44:35,770: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 33908
+
+ error: 
+ retcode : 0
+DEBUG 2019-09-05 16:44:36,895: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 33907
+
+ error: 
+ retcode : 0
+DEBUG 2019-09-05 16:44:36,895: 	 Proxy lifetime 33908 secs is different from voms extension lifetime 33907 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-09-05 16:44:36,895: 	 Proxy valid for 09:25:07 hours
+INFO 2019-09-05 16:44:36,895: 	 Will use CRAB configuration file crabTPG_MC_2019_1-2000.py
+DEBUG 2019-09-05 16:44:36,896: 	 Loading CRAB configuration file.
+DEBUG 2019-09-05 16:44:40,733: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-09-05 16:44:40,733: 	 Working area '/afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/2019_TPG_crab_projects_MC/crab_SingleNeutrinoGun_GEN-SIM-DIGI-RAW_1-2000_5Sept19' already exists 
+Please change the requestName in the config file
+ERROR 2019-09-05 16:44:40,734: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 315, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 404, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/2019_TPG_crab_projects_MC/crab_SingleNeutrinoGun_GEN-SIM-DIGI-RAW_1-2000_5Sept19' already exists 
+Please change the requestName in the config file
+DEBUG 2019-09-05 16:59:59,280: 	 Executing command: 'submit'
+DEBUG 2019-09-05 16:59:59,282: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-09-05 16:59:59,306: 	 Checking credentials
+DEBUG 2019-09-05 16:59:59,307: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-09-05 16:59:59,307: 	 Getting proxy life time left
+DEBUG 2019-09-05 17:00:00,429: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 32983
+
+ error: 
+ retcode : 0
+DEBUG 2019-09-05 17:00:01,451: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 32982
+
+ error: 
+ retcode : 0
+DEBUG 2019-09-05 17:00:01,451: 	 Proxy lifetime 32983 secs is different from voms extension lifetime 32982 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-09-05 17:00:01,451: 	 Proxy valid for 09:09:42 hours
+INFO 2019-09-05 17:00:01,455: 	 Will use CRAB configuration file crabTPG_MC_2019_1-2000.py
+DEBUG 2019-09-05 17:00:01,455: 	 Loading CRAB configuration file.
+DEBUG 2019-09-05 17:00:06,255: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-09-05 17:00:06,256: 	 Working area '/afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/2019_TPG_crab_projects_MC/crab_SingleNeutrinoGun_GEN-SIM-DIGI-RAW_1-2000_5Sept19' already exists 
+Please change the requestName in the config file
+ERROR 2019-09-05 17:00:06,256: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 315, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 404, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/2019_TPG_crab_projects_MC/crab_SingleNeutrinoGun_GEN-SIM-DIGI-RAW_1-2000_5Sept19' already exists 
+Please change the requestName in the config file
+DEBUG 2019-09-19 13:24:06.430 UTC: 	 Executing command: 'status'
+DEBUG 2019-09-19 13:24:06.431 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+ERROR 2019-09-19 13:24:06.432 UTC: 	 Error: 2019_TPG_crab_projects_MC/crab_SingleNeutrinoGun_GEN-SIM-DIGI-RAW_2001-4000 is not a valid CRAB project directory.
+ERROR 2019-09-19 13:24:06.432 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: 2019_TPG_crab_projects_MC/crab_SingleNeutrinoGun_GEN-SIM-DIGI-RAW_2001-4000 is not a valid CRAB project directory.
+DEBUG 2019-09-20 10:00:37.412 UTC: 	 Executing command: 'getoutput'
+DEBUG 2019-09-20 10:00:37.412 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-09-22 19:21:48.820 UTC: 	 Executing command: 'submit'
+DEBUG 2019-09-22 19:21:48.822 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-09-22 19:21:48.830 UTC: 	 Checking credentials
+DEBUG 2019-09-22 19:21:48.830 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-09-22 19:21:48.830 UTC: 	 Getting proxy life time left
+DEBUG 2019-09-22 19:21:49.535 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 41109
+
+ error: 
+ retcode : 0
+DEBUG 2019-09-22 19:21:50.243 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 41108
+
+ error: 
+ retcode : 0
+DEBUG 2019-09-22 19:21:50.243 UTC: 	 Proxy lifetime 41109 secs is different from voms extension lifetime 41108 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-09-22 19:21:50.243 UTC: 	 Proxy valid for 11:25:08 hours
+INFO 2019-09-22 19:21:50.243 UTC: 	 Will use CRAB configuration file crabTPG_306456.py
+DEBUG 2019-09-22 19:21:50.243 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-09-22 19:21:52.650 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-09-22 19:21:52.651 UTC: 	 Working area '/afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_23Sept19/crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456' already exists 
+Please change the requestName in the config file
+ERROR 2019-09-22 19:21:52.651 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 315, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 408, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_23Sept19/crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456' already exists 
+Please change the requestName in the config file
+DEBUG 2019-09-23 08:30:29.790 UTC: 	 Executing command: 'submit'
+DEBUG 2019-09-23 08:30:29.790 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-09-23 08:30:29.801 UTC: 	 Checking credentials
+DEBUG 2019-09-23 08:30:29.801 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-09-23 08:30:29.801 UTC: 	 Getting proxy life time left
+DEBUG 2019-09-23 08:30:30.610 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 42599
+
+ error: 
+ retcode : 0
+DEBUG 2019-09-23 08:30:31.317 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 42598
+
+ error: 
+ retcode : 0
+DEBUG 2019-09-23 08:30:31.317 UTC: 	 Proxy lifetime 42599 secs is different from voms extension lifetime 42598 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-09-23 08:30:31.317 UTC: 	 Proxy valid for 11:49:58 hours
+INFO 2019-09-23 08:30:31.317 UTC: 	 Will use CRAB configuration file crabTPG_306456.py
+DEBUG 2019-09-23 08:30:31.317 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-09-23 08:30:34.119 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-09-23 08:30:34.119 UTC: 	 Working area '/afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/DataTP_ZeroBias_Run2017F-v1_RAW_Run306456/crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_23Sept19' already exists 
+Please change the requestName in the config file
+ERROR 2019-09-23 08:30:34.120 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 315, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 408, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/DataTP_ZeroBias_Run2017F-v1_RAW_Run306456/crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_23Sept19' already exists 
+Please change the requestName in the config file
+DEBUG 2019-09-23 08:50:44.013 UTC: 	 Executing command: 'submit'
+DEBUG 2019-09-23 08:50:44.014 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-09-23 08:50:44.031 UTC: 	 Checking credentials
+DEBUG 2019-09-23 08:50:44.031 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-09-23 08:50:44.031 UTC: 	 Getting proxy life time left
+DEBUG 2019-09-23 08:50:44.838 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 41385
+
+ error: 
+ retcode : 0
+DEBUG 2019-09-23 08:50:45.647 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 41384
+
+ error: 
+ retcode : 0
+DEBUG 2019-09-23 08:50:45.647 UTC: 	 Proxy lifetime 41385 secs is different from voms extension lifetime 41384 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-09-23 08:50:45.647 UTC: 	 Proxy valid for 11:29:44 hours
+INFO 2019-09-23 08:50:45.647 UTC: 	 Will use CRAB configuration file crabTPG_306456.py
+DEBUG 2019-09-23 08:50:45.647 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-09-23 08:50:48.598 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-09-23 08:50:48.600 UTC: 	 Working area '/afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/DataTP_ZeroBias_Run2017F-v1_RAW_Run306456/crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_23Sept19' already exists 
+Please change the requestName in the config file
+ERROR 2019-09-23 08:50:48.600 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 315, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 408, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/DataTP_ZeroBias_Run2017F-v1_RAW_Run306456/crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_23Sept19' already exists 
+Please change the requestName in the config file
+DEBUG 2019-09-23 17:31:34.868 UTC: 	 Executing command: 'status'
+DEBUG 2019-09-23 17:31:34.869 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+ERROR 2019-09-23 17:31:34.904 UTC: 	 Error: DataTP_ZeroBias_Run2017F-v1_RAW_Run306456/crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_23Sept19/ is not a valid CRAB project directory.
+ERROR 2019-09-23 17:31:34.904 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: DataTP_ZeroBias_Run2017F-v1_RAW_Run306456/crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_23Sept19/ is not a valid CRAB project directory.
+DEBUG 2019-09-29 17:35:41.057 UTC: 	 Executing command: 'status'
+DEBUG 2019-09-29 17:35:41.057 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+ERROR 2019-09-29 17:35:41.059 UTC: 	 Error: DataTP_ZeroBias_Run2017F-v1_RAW_Run306456/crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_23Sept19/ is not a valid CRAB project directory.
+ERROR 2019-09-29 17:35:41.059 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: DataTP_ZeroBias_Run2017F-v1_RAW_Run306456/crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_23Sept19/ is not a valid CRAB project directory.
+DEBUG 2019-10-11 11:10:56.133 UTC: 	 Executing command: 'remake'
+DEBUG 2019-10-11 11:10:56.134 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-10-11 11:10:56.277 UTC: 	 Checking credentials
+DEBUG 2019-10-11 11:10:56.277 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-10-11 11:10:56.277 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-11 11:10:58.847 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 42702
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-11 11:11:00.821 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 42700
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-11 11:11:00.821 UTC: 	 Proxy lifetime 42702 secs is different from voms extension lifetime 42700 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-10-11 11:11:00.821 UTC: 	 Proxy valid for 11:51:40 hours
+DEBUG 2019-10-11 11:11:00.946 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-11 11:11:00.946 UTC: 	 Checking credentials
+DEBUG 2019-10-11 11:11:00.946 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-10-11 11:11:00.946 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-11 11:11:02.703 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 42698
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-11 11:11:04.370 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 42696
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-11 11:11:04.370 UTC: 	 Proxy lifetime 42698 secs is different from voms extension lifetime 42696 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-10-11 11:11:04.370 UTC: 	 Proxy valid for 11:51:36 hours
+DEBUG 2019-10-11 11:11:04.487 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-10-11 11:11:04.703 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-11 11:11:04.703 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-10-11 11:11:04.703 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur_cmsweb.cern.ch for credential name
+DEBUG 2019-10-11 11:11:05.226 UTC: 	 Executing : 
+ command : myproxy-info -l 9cd94953387eeee7bf4da2b7588630639ea1153b -s myproxy.cern.ch
+ output : username: 9cd94953387eeee7bf4da2b7588630639ea1153b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 703:18:27  (29.3 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-11 11:11:05.227 UTC: 	 Myproxy is valid: 2531907
+DEBUG 2019-10-11 11:11:05.227 UTC: 	 Command use: remake
+DEBUG 2019-10-11 11:11:05.227 UTC: 	 Options use: ['--task=191010_181811:sthakur_crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_10OCT19']
+DEBUG 2019-10-11 11:11:05.311 UTC: 	 CRABClient version: 3.3.1909
+DEBUG 2019-10-11 11:11:05.311 UTC: 	 Instance is prod
+DEBUG 2019-10-11 11:11:05.311 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-10-11 11:11:05.311 UTC: 	 Command url /crabserver/prod/workflow
+INFO 2019-10-11 11:11:05.312 UTC: 	 Remaking crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_10OCT19 folder.
+INFO 2019-10-11 11:11:05.406 UTC: 	 Remaking .requestcache file.
+INFO 2019-10-11 11:11:05.421 UTC: 	 Success: Finished remaking project directory crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_10OCT19
+INFO 2019-10-11 11:11:05.544 UTC: 	 Log file is /afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/crab.log
+DEBUG 2019-10-11 19:14:02.085 UTC: 	 Executing command: 'remake'
+DEBUG 2019-10-11 19:14:02.086 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+WARNING 2019-10-11 19:14:02.088 UTC: 	 Warning: 'crab remake' command takes no arguments, 1 given. Ignoring arguments ['191010_181811:sthakur_crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_10OCT19'].
+DEBUG 2019-10-11 19:14:02.099 UTC: 	 Checking credentials
+DEBUG 2019-10-11 19:14:02.100 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-10-11 19:14:02.100 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-11 19:14:02.905 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 39474
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-11 19:14:03.611 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 39473
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-11 19:14:03.611 UTC: 	 Proxy lifetime 39474 secs is different from voms extension lifetime 39473 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-10-11 19:14:03.611 UTC: 	 Proxy valid for 10:57:53 hours
+DEBUG 2019-10-11 19:14:03.721 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-11 19:14:03.721 UTC: 	 Checking credentials
+DEBUG 2019-10-11 19:14:03.722 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-10-11 19:14:03.722 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-11 19:14:04.428 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 39472
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-11 19:14:05.134 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 39471
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-11 19:14:05.134 UTC: 	 Proxy lifetime 39472 secs is different from voms extension lifetime 39471 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-10-11 19:14:05.134 UTC: 	 Proxy valid for 10:57:51 hours
+DEBUG 2019-10-11 19:14:05.238 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-10-11 19:14:05.349 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-11 19:14:05.349 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-10-11 19:14:05.349 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur_cmsweb.cern.ch for credential name
+DEBUG 2019-10-11 19:14:05.553 UTC: 	 Executing : 
+ command : myproxy-info -l 9cd94953387eeee7bf4da2b7588630639ea1153b -s myproxy.cern.ch
+ output : username: 9cd94953387eeee7bf4da2b7588630639ea1153b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 695:15:27  (29.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-11 19:14:05.554 UTC: 	 Myproxy is valid: 2502927
+ERROR 2019-10-11 19:14:05.555 UTC: 	 Error: Task name does not match the regular expression '^\d{6}_\d{6}_?([^\:]*)\:[a-zA-Z-]+_(crab_)?.+'.
+ERROR 2019-10-11 19:14:05.555 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 353, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/remake.py", line 64, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: Task name does not match the regular expression '^\d{6}_\d{6}_?([^\:]*)\:[a-zA-Z-]+_(crab_)?.+'.
+DEBUG 2019-10-11 19:14:29.681 UTC: 	 Executing command: 'remake'
+DEBUG 2019-10-11 19:14:29.682 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-10-11 19:14:29.691 UTC: 	 Checking credentials
+DEBUG 2019-10-11 19:14:29.692 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-10-11 19:14:29.692 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-11 19:14:30.397 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 39446
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-11 19:14:31.104 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 39445
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-11 19:14:31.105 UTC: 	 Proxy lifetime 39446 secs is different from voms extension lifetime 39445 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-10-11 19:14:31.105 UTC: 	 Proxy valid for 10:57:25 hours
+DEBUG 2019-10-11 19:14:31.216 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-11 19:14:31.216 UTC: 	 Checking credentials
+DEBUG 2019-10-11 19:14:31.216 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-10-11 19:14:31.216 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-11 19:14:32.022 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 39445
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-11 19:14:32.734 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 39444
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-11 19:14:32.735 UTC: 	 Proxy lifetime 39445 secs is different from voms extension lifetime 39444 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-10-11 19:14:32.735 UTC: 	 Proxy valid for 10:57:24 hours
+DEBUG 2019-10-11 19:14:32.835 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-10-11 19:14:32.948 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-11 19:14:32.948 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-10-11 19:14:32.948 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur_cmsweb.cern.ch for credential name
+DEBUG 2019-10-11 19:14:33.153 UTC: 	 Executing : 
+ command : myproxy-info -l 9cd94953387eeee7bf4da2b7588630639ea1153b -s myproxy.cern.ch
+ output : username: 9cd94953387eeee7bf4da2b7588630639ea1153b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 695:14:59  (29.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-11 19:14:33.155 UTC: 	 Myproxy is valid: 2502899
+DEBUG 2019-10-11 19:14:33.155 UTC: 	 Command use: remake
+DEBUG 2019-10-11 19:14:33.155 UTC: 	 Options use: ['--task=191010_181811:sthakur_crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_10OCT19']
+DEBUG 2019-10-11 19:14:33.245 UTC: 	 CRABClient version: 3.3.1909
+DEBUG 2019-10-11 19:14:33.245 UTC: 	 Instance is prod
+DEBUG 2019-10-11 19:14:33.245 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-10-11 19:14:33.245 UTC: 	 Command url /crabserver/prod/workflow
+INFO 2019-10-11 19:14:33.314 UTC: 	 Error: crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_10OCT19/.requestcache not created, because it already exists.
+INFO 2019-10-11 19:14:33.316 UTC: 	 Log file is /afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/crab.log
+DEBUG 2019-10-12 11:53:33.266 UTC: 	 Executing command: 'remake'
+DEBUG 2019-10-12 11:53:33.268 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+WARNING 2019-10-12 11:53:33.269 UTC: 	 Warning: 'crab remake' command takes no arguments, 1 given. Ignoring arguments ['task=191010_181811:sthakur_crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_10OCT19'].
+DEBUG 2019-10-12 11:53:33.276 UTC: 	 Checking credentials
+DEBUG 2019-10-12 11:53:33.277 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-10-12 11:53:33.277 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-12 11:53:33.981 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 41590
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-12 11:53:34.586 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 41589
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-12 11:53:34.586 UTC: 	 Proxy lifetime 41590 secs is different from voms extension lifetime 41589 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-10-12 11:53:34.586 UTC: 	 Proxy valid for 11:33:09 hours
+DEBUG 2019-10-12 11:53:34.694 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-12 11:53:34.694 UTC: 	 Checking credentials
+DEBUG 2019-10-12 11:53:34.694 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-10-12 11:53:34.694 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-12 11:53:35.299 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 41588
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-12 11:53:35.909 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 41588
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-12 11:53:35.910 UTC: 	 Proxy valid for 11:33:08 hours
+DEBUG 2019-10-12 11:53:36.038 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-10-12 11:53:36.146 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-12 11:53:36.147 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-10-12 11:53:36.147 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur_cmsweb.cern.ch for credential name
+DEBUG 2019-10-12 11:53:36.350 UTC: 	 Executing : 
+ command : myproxy-info -l 9cd94953387eeee7bf4da2b7588630639ea1153b -s myproxy.cern.ch
+ output : username: 9cd94953387eeee7bf4da2b7588630639ea1153b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 678:35:56  (28.3 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-12 11:53:36.351 UTC: 	 Myproxy is valid: 2442956
+ERROR 2019-10-12 11:53:36.351 UTC: 	 Error: Please specify the task name for which to remake a CRAB project directory. Use the --task option.
+ERROR 2019-10-12 11:53:36.351 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 353, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1909/lib/python2.7/site-packages/CRABClient/Commands/remake.py", line 59, in validateOptions
+    raise ex
+MissingOptionException: [91mError[0m: Please specify the task name for which to remake a CRAB project directory. Use the --task option.
+DEBUG 2019-10-12 11:53:45.393 UTC: 	 Executing command: 'remake'
+DEBUG 2019-10-12 11:53:45.393 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-10-12 11:53:45.399 UTC: 	 Checking credentials
+DEBUG 2019-10-12 11:53:45.399 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-10-12 11:53:45.399 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-12 11:53:46.005 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 41578
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-12 11:53:46.609 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 41577
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-12 11:53:46.609 UTC: 	 Proxy lifetime 41578 secs is different from voms extension lifetime 41577 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-10-12 11:53:46.610 UTC: 	 Proxy valid for 11:32:57 hours
+DEBUG 2019-10-12 11:53:46.718 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-12 11:53:46.718 UTC: 	 Checking credentials
+DEBUG 2019-10-12 11:53:46.718 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-10-12 11:53:46.718 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-12 11:53:47.324 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 41576
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-12 11:53:47.928 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 41576
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-12 11:53:47.929 UTC: 	 Proxy valid for 11:32:56 hours
+DEBUG 2019-10-12 11:53:48.029 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-10-12 11:53:48.137 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-12 11:53:48.137 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-10-12 11:53:48.137 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur_cmsweb.cern.ch for credential name
+DEBUG 2019-10-12 11:53:48.341 UTC: 	 Executing : 
+ command : myproxy-info -l 9cd94953387eeee7bf4da2b7588630639ea1153b -s myproxy.cern.ch
+ output : username: 9cd94953387eeee7bf4da2b7588630639ea1153b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 678:35:44  (28.3 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-12 11:53:48.342 UTC: 	 Myproxy is valid: 2442944
+DEBUG 2019-10-12 11:53:48.342 UTC: 	 Command use: remake
+DEBUG 2019-10-12 11:53:48.342 UTC: 	 Options use: ['--task=191010_181811:sthakur_crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_10OCT19']
+DEBUG 2019-10-12 11:53:48.410 UTC: 	 CRABClient version: 3.3.1909
+DEBUG 2019-10-12 11:53:48.410 UTC: 	 Instance is prod
+DEBUG 2019-10-12 11:53:48.410 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-10-12 11:53:48.410 UTC: 	 Command url /crabserver/prod/workflow
+INFO 2019-10-12 11:53:48.439 UTC: 	 Error: crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_10OCT19/.requestcache not created, because it already exists.
+INFO 2019-10-12 11:53:48.441 UTC: 	 Log file is /afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/crab.log
+DEBUG 2019-10-12 11:54:43.970 UTC: 	 Executing command: 'remake'
+DEBUG 2019-10-12 11:54:43.970 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-10-12 11:54:43.985 UTC: 	 Checking credentials
+DEBUG 2019-10-12 11:54:43.985 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-10-12 11:54:43.985 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-12 11:54:44.589 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 41519
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-12 11:54:45.194 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 41518
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-12 11:54:45.195 UTC: 	 Proxy lifetime 41519 secs is different from voms extension lifetime 41518 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-10-12 11:54:45.195 UTC: 	 Proxy valid for 11:31:58 hours
+DEBUG 2019-10-12 11:54:45.303 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-12 11:54:45.304 UTC: 	 Checking credentials
+DEBUG 2019-10-12 11:54:45.304 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-10-12 11:54:45.304 UTC: 	 Getting proxy life time left
+DEBUG 2019-10-12 11:54:45.909 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 41518
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-12 11:54:46.513 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 41517
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-12 11:54:46.514 UTC: 	 Proxy lifetime 41518 secs is different from voms extension lifetime 41517 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-10-12 11:54:46.514 UTC: 	 Proxy valid for 11:31:57 hours
+DEBUG 2019-10-12 11:54:46.584 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-10-12 11:54:46.693 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-12 11:54:46.693 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-10-12 11:54:46.693 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur_cmsweb.cern.ch for credential name
+DEBUG 2019-10-12 11:54:46.897 UTC: 	 Executing : 
+ command : myproxy-info -l 9cd94953387eeee7bf4da2b7588630639ea1153b -s myproxy.cern.ch
+ output : username: 9cd94953387eeee7bf4da2b7588630639ea1153b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 678:34:46  (28.3 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-10-12 11:54:46.898 UTC: 	 Myproxy is valid: 2442886
+DEBUG 2019-10-12 11:54:46.898 UTC: 	 Command use: remake
+DEBUG 2019-10-12 11:54:46.898 UTC: 	 Options use: ['--task=191010_181811:sthakur_crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_10OCT19']
+DEBUG 2019-10-12 11:54:47.032 UTC: 	 CRABClient version: 3.3.1909
+DEBUG 2019-10-12 11:54:47.032 UTC: 	 Instance is prod
+DEBUG 2019-10-12 11:54:47.032 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-10-12 11:54:47.032 UTC: 	 Command url /crabserver/prod/workflow
+INFO 2019-10-12 11:54:47.032 UTC: 	 Error: crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_10OCT19/.requestcache not created, because it already exists.
+INFO 2019-10-12 11:54:47.034 UTC: 	 Log file is /afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/crab.log
+DEBUG 2019-11-28 05:30:47.748 UTC: 	 Running on: Linux lxplus733.cern.ch 3.10.0-1062.1.2.el7.x86_64 #1 SMP Mon Sep 30 14:19:46 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2019-11-28 05:30:47.766 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2019-11-28 05:30:47.766 UTC: 	 Executing command: 'submit'
+DEBUG 2019-11-28 05:30:47.768 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-11-28 05:30:47.778 UTC: 	 Checking credentials
+DEBUG 2019-11-28 05:30:47.779 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-11-28 05:30:47.779 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-28 05:30:48.484 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 40763
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-28 05:30:49.190 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 40762
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-28 05:30:49.190 UTC: 	 Proxy lifetime 40763 secs is different from voms extension lifetime 40762 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-11-28 05:30:49.190 UTC: 	 Proxy valid for 11:19:22 hours
+INFO 2019-11-28 05:30:49.190 UTC: 	 Will use CRAB configuration file crabTPG_306456.py
+DEBUG 2019-11-28 05:30:49.191 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-11-28 05:30:51.529 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-11-28 05:30:51.529 UTC: 	 Working area '/afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/DataTP_ZeroBias_Run2017F-v1_RAW_Run306456/crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_28Nov19' already exists 
+Please change the requestName in the config file
+ERROR 2019-11-28 05:30:51.530 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 324, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 413, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/DataTP_ZeroBias_Run2017F-v1_RAW_Run306456/crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_28Nov19' already exists 
+Please change the requestName in the config file
+DEBUG 2019-11-28 05:31:21.350 UTC: 	 Running on: Linux lxplus733.cern.ch 3.10.0-1062.1.2.el7.x86_64 #1 SMP Mon Sep 30 14:19:46 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2019-11-28 05:31:21.364 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2019-11-28 05:31:21.365 UTC: 	 Executing command: 'submit'
+DEBUG 2019-11-28 05:31:21.365 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-11-28 05:31:21.371 UTC: 	 Checking credentials
+DEBUG 2019-11-28 05:31:21.372 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-11-28 05:31:21.372 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-28 05:31:22.078 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 40730
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-28 05:31:22.684 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 40729
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-28 05:31:22.684 UTC: 	 Proxy lifetime 40730 secs is different from voms extension lifetime 40729 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-11-28 05:31:22.684 UTC: 	 Proxy valid for 11:18:49 hours
+INFO 2019-11-28 05:31:22.684 UTC: 	 Will use CRAB configuration file crabTPG_306456.py
+DEBUG 2019-11-28 05:31:22.685 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-11-28 05:31:25.007 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-11-28 05:31:25.007 UTC: 	 Working area '/afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/DataTP_ZeroBias_Run2017F-v1_RAW_Run306456/crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_28Nov19' already exists 
+Please change the requestName in the config file
+ERROR 2019-11-28 05:31:25.007 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 324, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 413, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/DataTP_ZeroBias_Run2017F-v1_RAW_Run306456/crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_28Nov19' already exists 
+Please change the requestName in the config file
+DEBUG 2019-11-28 06:36:10.672 UTC: 	 Running on: Linux lxplus726.cern.ch 3.10.0-1062.4.1.el7.x86_64 #1 SMP Fri Oct 18 17:15:30 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2019-11-28 06:36:10.693 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2019-11-28 06:36:10.693 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-28 06:36:10.695 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+ERROR 2019-11-28 06:36:10.697 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/DataTP_ZeroBias_Run2017F-v1_RAW_Run306456/crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_28Nov19
+ERROR 2019-11-28 06:36:10.697 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 277, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 599, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 461, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/DataTP_ZeroBias_Run2017F-v1_RAW_Run306456/crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_28Nov19
+DEBUG 2019-12-11 04:39:59.665 UTC: 	 Running on: Linux lxplus719.cern.ch 3.10.0-1062.1.2.el7.x86_64 #1 SMP Mon Sep 30 14:19:46 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2019-12-11 04:39:59.686 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2019-12-11 04:39:59.686 UTC: 	 Executing command: 'submit'
+DEBUG 2019-12-11 04:39:59.688 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-12-11 04:39:59.724 UTC: 	 Checking credentials
+DEBUG 2019-12-11 04:39:59.725 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-12-11 04:39:59.725 UTC: 	 Getting proxy life time left
+DEBUG 2019-12-11 04:40:00.430 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 41741
+
+ error: 
+ retcode : 0
+DEBUG 2019-12-11 04:40:01.035 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 41741
+
+ error: 
+ retcode : 0
+DEBUG 2019-12-11 04:40:01.035 UTC: 	 Proxy valid for 11:35:41 hours
+INFO 2019-12-11 04:40:01.035 UTC: 	 Will use CRAB configuration file ecalTPGAnalysis_DATA_2019.py
+DEBUG 2019-12-11 04:40:01.035 UTC: 	 Loading CRAB configuration file.
+ERROR 2019-12-11 04:40:08.882 UTC: 	 Error while loading CRAB configuration:
+Unable to find a Configuration object instance in file:
+/afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/ecalTPGAnalysis_DATA_2019.py
+
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2019-12-11 04:40:08.882 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 320, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 88, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+Unable to find a Configuration object instance in file:
+/afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/ecalTPGAnalysis_DATA_2019.py
+
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2019-12-11 05:21:44.051 UTC: 	 Running on: Linux lxplus719.cern.ch 3.10.0-1062.1.2.el7.x86_64 #1 SMP Mon Sep 30 14:19:46 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2019-12-11 05:21:44.071 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2019-12-11 05:21:44.071 UTC: 	 Executing command: 'status'
+DEBUG 2019-12-11 05:21:44.072 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+ERROR 2019-12-11 05:21:44.074 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/DataTP_ZeroBias_Run2017F-v1_RAW_Run306456/crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_11Dec19
+ERROR 2019-12-11 05:21:44.074 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 277, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 599, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 461, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/DataTP_ZeroBias_Run2017F-v1_RAW_Run306456/crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_11Dec19
+DEBUG 2019-12-11 06:45:05.985 UTC: 	 Running on: Linux lxplus719.cern.ch 3.10.0-1062.1.2.el7.x86_64 #1 SMP Mon Sep 30 14:19:46 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2019-12-11 06:45:06.001 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2019-12-11 06:45:06.001 UTC: 	 Executing command: 'status'
+DEBUG 2019-12-11 06:45:06.002 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+ERROR 2019-12-11 06:45:06.008 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/DataTP_ZeroBias_Run2017F-v1_RAW_Run306456/crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_11Dec19
+ERROR 2019-12-11 06:45:06.008 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 277, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 599, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 461, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/DataTP_ZeroBias_Run2017F-v1_RAW_Run306456/crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_11Dec19
+DEBUG 2019-12-24 06:36:17.120 UTC: 	 Running on: Linux lxplus704.cern.ch 3.10.0-1062.7.1.el7.x86_64 #1 SMP Mon Dec 2 17:33:29 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2019-12-24 06:36:17.138 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2019-12-24 06:36:17.138 UTC: 	 Executing command: 'submit'
+DEBUG 2019-12-24 06:36:17.139 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-12-24 06:36:17.203 UTC: 	 Checking credentials
+DEBUG 2019-12-24 06:36:17.205 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-12-24 06:36:17.205 UTC: 	 Getting proxy life time left
+DEBUG 2019-12-24 06:36:17.910 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 38679
+
+ error: 
+ retcode : 0
+DEBUG 2019-12-24 06:36:18.616 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 38677
+
+ error: 
+ retcode : 0
+DEBUG 2019-12-24 06:36:18.617 UTC: 	 Proxy lifetime 38679 secs is different from voms extension lifetime 38677 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-12-24 06:36:18.617 UTC: 	 Proxy valid for 10:44:37 hours
+INFO 2019-12-24 06:36:18.617 UTC: 	 Will use CRAB configuration file crabTPG_306456.py
+DEBUG 2019-12-24 06:36:18.617 UTC: 	 Loading CRAB configuration file.
+DEBUG 2019-12-24 06:36:21.162 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-12-24 06:36:21.195 UTC: 	 Working area '/afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/DataTP_ZeroBias_Run2017F-v1_RAW_Run306456/crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_11Dec19' already exists 
+Please change the requestName in the config file
+ERROR 2019-12-24 06:36:21.195 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 324, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 413, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/DataTP_ZeroBias_Run2017F-v1_RAW_Run306456/crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_11Dec19' already exists 
+Please change the requestName in the config file
+DEBUG 2019-12-26 08:52:19.916 UTC: 	 Running on: Linux lxplus765.cern.ch 3.10.0-1062.4.3.el7.x86_64 #1 SMP Wed Nov 13 23:58:53 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2019-12-26 08:52:19.931 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2019-12-26 08:52:19.932 UTC: 	 Executing command: 'remake'
+DEBUG 2019-12-26 08:52:19.932 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-12-26 09:44:48.763 UTC: 	 Running on: Linux lxplus7103.cern.ch 3.10.0-1062.9.1.el7.x86_64 #1 SMP Fri Dec 6 15:49:49 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2019-12-26 09:44:48.775 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2019-12-26 09:44:48.775 UTC: 	 Executing command: 'remake'
+DEBUG 2019-12-26 09:44:48.776 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+WARNING 2019-12-26 09:44:48.776 UTC: 	 Warning: 'crab remake' command takes no arguments, 1 given. Ignoring arguments ['DataTP_ZeroBias_Run2017F-v1_RAW_Run306456/crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_25Dec19/'].
+DEBUG 2019-12-26 09:44:48.781 UTC: 	 Checking credentials
+DEBUG 2019-12-26 09:44:48.782 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-12-26 09:44:48.782 UTC: 	 Getting proxy life time left
+DEBUG 2019-12-26 09:44:49.385 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 42960
+
+ error: 
+ retcode : 0
+DEBUG 2019-12-26 09:44:49.890 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 42960
+
+ error: 
+ retcode : 0
+DEBUG 2019-12-26 09:44:49.890 UTC: 	 Proxy valid for 11:56:00 hours
+DEBUG 2019-12-26 09:44:49.998 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-12-26 09:44:49.998 UTC: 	 Checking credentials
+DEBUG 2019-12-26 09:44:49.998 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-12-26 09:44:49.998 UTC: 	 Getting proxy life time left
+DEBUG 2019-12-26 09:44:50.502 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 42959
+
+ error: 
+ retcode : 0
+DEBUG 2019-12-26 09:44:51.106 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 42958
+
+ error: 
+ retcode : 0
+DEBUG 2019-12-26 09:44:51.107 UTC: 	 Proxy lifetime 42959 secs is different from voms extension lifetime 42958 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-12-26 09:44:51.107 UTC: 	 Proxy valid for 11:55:58 hours
+DEBUG 2019-12-26 09:44:51.191 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-12-26 09:44:51.299 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-12-26 09:44:51.300 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-12-26 09:44:51.300 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur_cmsweb.cern.ch for credential name
+DEBUG 2019-12-26 09:44:51.603 UTC: 	 Executing : 
+ command : myproxy-info -l 9cd94953387eeee7bf4da2b7588630639ea1153b -s myproxy.cern.ch
+ output : username: 9cd94953387eeee7bf4da2b7588630639ea1153b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 668:52:57  (27.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-12-26 09:44:51.604 UTC: 	 Myproxy is valid: 2407977
+ERROR 2019-12-26 09:44:51.604 UTC: 	 Error: Please specify the task name for which to remake a CRAB project directory. Use the --task option.
+ERROR 2019-12-26 09:44:51.604 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 362, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1911.patch1/lib/python2.7/site-packages/CRABClient/Commands/remake.py", line 59, in validateOptions
+    raise ex
+MissingOptionException: [91mError[0m: Please specify the task name for which to remake a CRAB project directory. Use the --task option.
+DEBUG 2019-12-26 09:46:16.414 UTC: 	 Running on: Linux lxplus7103.cern.ch 3.10.0-1062.9.1.el7.x86_64 #1 SMP Fri Dec 6 15:49:49 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2019-12-26 09:46:16.428 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2019-12-26 09:46:16.429 UTC: 	 Executing command: 'remake'
+DEBUG 2019-12-26 09:46:16.429 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-12-26 09:46:16.435 UTC: 	 Checking credentials
+DEBUG 2019-12-26 09:46:16.436 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-12-26 09:46:16.436 UTC: 	 Getting proxy life time left
+DEBUG 2019-12-26 09:46:17.040 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 42873
+
+ error: 
+ retcode : 0
+DEBUG 2019-12-26 09:46:17.646 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 42872
+
+ error: 
+ retcode : 0
+DEBUG 2019-12-26 09:46:17.646 UTC: 	 Proxy lifetime 42873 secs is different from voms extension lifetime 42872 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-12-26 09:46:17.646 UTC: 	 Proxy valid for 11:54:32 hours
+DEBUG 2019-12-26 09:46:17.755 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-12-26 09:46:17.755 UTC: 	 Checking credentials
+DEBUG 2019-12-26 09:46:17.755 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-12-26 09:46:17.755 UTC: 	 Getting proxy life time left
+DEBUG 2019-12-26 09:46:18.360 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 42871
+
+ error: 
+ retcode : 0
+DEBUG 2019-12-26 09:46:18.965 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 42871
+
+ error: 
+ retcode : 0
+DEBUG 2019-12-26 09:46:18.965 UTC: 	 Proxy valid for 11:54:31 hours
+DEBUG 2019-12-26 09:46:19.040 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-12-26 09:46:19.149 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-12-26 09:46:19.149 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-12-26 09:46:19.149 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur_cmsweb.cern.ch for credential name
+DEBUG 2019-12-26 09:46:19.454 UTC: 	 Executing : 
+ command : myproxy-info -l 9cd94953387eeee7bf4da2b7588630639ea1153b -s myproxy.cern.ch
+ output : username: 9cd94953387eeee7bf4da2b7588630639ea1153b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 668:51:29  (27.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-12-26 09:46:19.455 UTC: 	 Myproxy is valid: 2407889
+DEBUG 2019-12-26 09:46:19.455 UTC: 	 Command use: remake
+DEBUG 2019-12-26 09:46:19.455 UTC: 	 Options use: ['--task=191225_105044:sthakur_crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_25Dec19']
+DEBUG 2019-12-26 09:46:19.551 UTC: 	 CRABClient version: 3.3.1911.patch1
+DEBUG 2019-12-26 09:46:19.551 UTC: 	 Instance is prod
+DEBUG 2019-12-26 09:46:19.551 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-12-26 09:46:19.551 UTC: 	 Command url /crabserver/prod/workflow
+INFO 2019-12-26 09:46:19.551 UTC: 	 Remaking crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_25Dec19 folder.
+INFO 2019-12-26 09:46:19.555 UTC: 	 Remaking .requestcache file.
+INFO 2019-12-26 09:46:19.556 UTC: 	 Success: Finished remaking project directory crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_25Dec19
+INFO 2019-12-26 09:46:19.560 UTC: 	 Log file is /afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/crab.log
+DEBUG 2020-01-06 04:34:59.157 UTC: 	 Running on: Linux lxplus784.cern.ch 3.10.0-1062.4.3.el7.x86_64 #1 SMP Wed Nov 13 23:58:53 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-01-06 04:34:59.171 UTC: 	 OpenSSl version: OpenSSL 1.0.1r  28 Jan 2016
+DEBUG 2020-01-06 04:34:59.172 UTC: 	 Executing command: 'remake'
+DEBUG 2020-01-06 04:34:59.172 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2020-01-06 04:34:59.183 UTC: 	 Checking credentials
+DEBUG 2020-01-06 04:34:59.183 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2020-01-06 04:34:59.183 UTC: 	 Getting proxy life time left
+DEBUG 2020-01-06 04:34:59.787 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 41798
+
+ error: 
+ retcode : 0
+DEBUG 2020-01-06 04:35:00.396 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 41797
+
+ error: 
+ retcode : 0
+DEBUG 2020-01-06 04:35:00.396 UTC: 	 Proxy lifetime 41798 secs is different from voms extension lifetime 41797 secs for proxy: /tmp/x509up_u77410
+DEBUG 2020-01-06 04:35:00.396 UTC: 	 Proxy valid for 11:36:37 hours
+DEBUG 2020-01-06 04:35:00.505 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2020-01-06 04:35:00.505 UTC: 	 Checking credentials
+DEBUG 2020-01-06 04:35:00.505 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2020-01-06 04:35:00.505 UTC: 	 Getting proxy life time left
+DEBUG 2020-01-06 04:35:01.109 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 41796
+
+ error: 
+ retcode : 0
+DEBUG 2020-01-06 04:35:01.717 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 41796
+
+ error: 
+ retcode : 0
+DEBUG 2020-01-06 04:35:01.717 UTC: 	 Proxy valid for 11:36:36 hours
+DEBUG 2020-01-06 04:35:01.962 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2020-01-06 04:35:02.071 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2020-01-06 04:35:02.071 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2020-01-06 04:35:02.071 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur_cmsweb.cern.ch for credential name
+DEBUG 2020-01-06 04:35:02.274 UTC: 	 Executing : 
+ command : myproxy-info -l 9cd94953387eeee7bf4da2b7588630639ea1153b -s myproxy.cern.ch
+ output : username: 9cd94953387eeee7bf4da2b7588630639ea1153b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 410:02:46  (17.1 days)
+
+ error: 
+ retcode : 0
+DEBUG 2020-01-06 04:35:02.275 UTC: 	 Myproxy is valid: 1476166
+DEBUG 2020-01-06 04:35:02.276 UTC: 	 Command use: remake
+DEBUG 2020-01-06 04:35:02.276 UTC: 	 Options use: ['--task=191225_105044:sthakur_crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_25Dec19']
+DEBUG 2020-01-06 04:35:02.521 UTC: 	 CRABClient version: 3.3.2001
+DEBUG 2020-01-06 04:35:02.521 UTC: 	 Instance is prod
+DEBUG 2020-01-06 04:35:02.521 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2020-01-06 04:35:02.521 UTC: 	 Command url /crabserver/prod/workflow
+INFO 2020-01-06 04:35:02.568 UTC: 	 Error: crab_DataTP_ZeroBias_Run2017F-v1_RAW_Run306456_25Dec19/.requestcache not created, because it already exists.
+INFO 2020-01-06 04:35:02.590 UTC: 	 Log file is /afs/cern.ch/work/s/sthakur/Ecal_TPG/New_area/CMSSW_10_3_1/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/crab.log
+DEBUG 2020-01-18 03:53:57.354 UTC: 	 Running on: Linux lxplus788.cern.ch 3.10.0-1062.9.1.el7.x86_64 #1 SMP Fri Dec 6 15:49:49 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-01-18 03:53:57.366 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-01-18 03:53:57.366 UTC: 	 Executing command: 'submit'
+DEBUG 2020-01-18 03:53:57.366 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2020-01-18 03:54:28.391 UTC: 	 Running on: Linux lxplus788.cern.ch 3.10.0-1062.9.1.el7.x86_64 #1 SMP Fri Dec 6 15:49:49 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-01-18 03:54:28.402 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-01-18 03:54:28.402 UTC: 	 Executing command: 'submit'
+DEBUG 2020-01-18 03:54:28.402 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2020-01-18 03:55:26.268 UTC: 	 Running on: Linux lxplus788.cern.ch 3.10.0-1062.9.1.el7.x86_64 #1 SMP Fri Dec 6 15:49:49 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-01-18 03:55:26.280 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-01-18 03:55:26.281 UTC: 	 Executing command: 'submit'
+DEBUG 2020-01-18 03:55:26.281 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3

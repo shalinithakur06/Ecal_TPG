@@ -1,0 +1,24 @@
+
+
+##Instructions for running TPGAnalysis.
+1. People will ask us to run the TPGAnalysis for a particular Run (for example Run#306456). Since the run contains many files so it is better to run theses jobs in the batch. 
+to run the batch we need to first find out which dataset we want to run. For this open the DAS link and submit the query as shown below:
+dataset run=306456
+This should list all the dataset corresponding to this run number. We should choose any of the following: 
+/ZeroBias/Run2017F-v1/RAW
+/SinglePhoton/Run2017F-v1/RAW
+Once we have decide on the dataset then we can submit the batch job by using following command from the "$CMSSW_BASE/src/EcalTPGAnalysis/Scripts/TriggerAnalysis"
+./runTPGbatch_AAA.sh lxbatch 306456 /SinglePhoton/Run2017F-v1/RAW 101X_dataRun2_Prompt_v9 -1
+(Please make sure that the correct global tag is selected corresponding to the dataset we are running. Before submitted the job at lxplus, make sure by running the configuration file "ecalTPGAnalysis_TEMPLATE_weekly.py" by selecting one file from the dataset. One file can be selected from the DAS page by using the following query. "file dataset=/SinglePhoton/Run2017F-v1/RAW run=306456")
+Output: This step will submit one job per root file. These all files will combined to make a single file. This single output file will be used to make plots as described in step2. 
+All the logfiles related to batch job submision lie in the directory "$CMSSW_BASE/src/EcalTPGAnalysis/Scripts/TriggerAnalysis/log_and_results"
+2. The below command fragment will produce not only the plots but will also make the webpage containing the plots. The user need to change the value of the parameters as per their requirement and workspace.  
+./makeTrigPrimPlots.sh -r 306456 -d /eos/user/s/sdutt -l /eos/user/s/sdutt/www -p /eos/user/s/sdutt/www -e 30  
+(Before running the above command please change the path as per your area.)
+(( -d <eos dir> -l <html dir> -p <http dir> -e <EG trigger value for L1> ))
+(-d option one should specify work diretory)
+(-p http directory )
+(-l html directory)
+
+after running send the link of the http directory so that people can look at plots.
+ 
